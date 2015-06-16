@@ -1,0 +1,364 @@
+/* --------------------------------------------------------------
+
+   reset.css
+   * Resets default browser CSS.
+
+-------------------------------------------------------------- */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, footer, header,
+hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* This helps to make newer HTML5 elements behave like DIVs in older browers */
+article, aside, details, figcaption, figure, dialog,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* Line-height should always be unitless! */
+body {
+  line-height: 1.5;
+  background: white; }
+
+/* Tables still need 'cellspacing="0"' in the markup. */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+/* float:none prevents the span-x classes from breaking table-cell display */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float: none !important; }
+
+table, th, td {
+  vertical-align: middle; }
+
+/* Remove possible quote marks (") from <q>, <blockquote>. */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ''; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+/* Remove annoying border on linked images. */
+a img {
+  border: none; }
+
+/* Remember to define your own focus styles! */
+:focus {
+  outline: 0; }
+
+@font-face {
+  font-family: 'Estrangelo';
+  src: url("/assets/estre-webfont.eot");
+  src: url("/assets/estre-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/estre-webfont.woff") format("woff"), url("/assets/estre-webfont.ttf") format("truetype"), url("/assets/estre-webfont.svg#EstrangeloEdessaRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  background-color: #303030;
+  min-width: 960px; }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px; }
+
+header {
+  margin: 15px 0px 40px;
+  cursor: pointer; }
+  header nav {
+    background: transparent url(/assets/bot_language.png) no-repeat top left;
+    clear: both;
+    float: right;
+    height: 28px;
+    margin-bottom: -10px;
+    width: 92px; }
+    header nav.en {
+      background-position: 0px -28px; }
+    header nav a {
+      display: block;
+      height: 28px;
+      overflow: hidden;
+      text-indent: 1999em;
+      width: 100%; }
+  header#main h1 {
+    clear: both;
+    width: 100%; }
+  header h1 {
+    color: #fff;
+    font: normal normal 88px "Estrangelo", sans-serif;
+    line-height: 88px;
+    letter-spacing: -4px; }
+    header h1 a {
+      color: #fff;
+      text-decoration: none; }
+  header small {
+    color: #5f5f5f;
+    cursor: help;
+    float: right;
+    font-size: 26px;
+    letter-spacing: -2px;
+    margin-top: 15px; }
+  header small span {
+    color: #474747; }
+
+section {
+  float: left;
+  margin-bottom: 15px;
+  width: 100%; }
+  section header {
+    background-color: #f3bd00;
+    border-left: 15px solid #000;
+    float: left;
+    margin: 0px;
+    width: 945px; }
+    section header:hover {
+      background-image: url(/assets/bg_over_listrado.png); }
+    section header a {
+      color: #000; }
+    section header h1 {
+      color: #000;
+      float: left;
+      font-size: 68px;
+      line-height: 68px;
+      padding: 10px 0px;
+      margin-left: 25px; }
+  section p.short_desc {
+    font: normal normal 16px "Estrangelo", sans-serif;
+    line-height: 16px;
+    border-left: 1px solid #303030;
+    float: right;
+    height: 38px;
+    padding: 25px;
+    width: 350px; }
+    section p.short_desc:after {
+      content: "";
+      float: right;
+      width: 12px;
+      height: 12px;
+      background: url(/assets/plus_small.png) bottom right no-repeat; }
+  section div.wrapper {
+    background-color: #484848;
+    border-left: 15px solid #000;
+    float: left;
+    margin-top: 15px; }
+  section div.content {
+    font: normal normal 16px "Estrangelo", sans-serif;
+    line-height: 16px;
+    border-right: 1px solid #303030;
+    color: #f3bd00;
+    float: left;
+    padding: 25px;
+    width: 494px; }
+    section div.content p {
+      margin-bottom: 15px; }
+    section div.content a {
+      color: #fff; }
+    section div.content h1 a {
+      color: #F3BD00;
+      text-decoration: none; }
+    section div.content a:hover {
+      text-decoration: underline; }
+    section div.content h1 {
+      font-size: 27px;
+      margin-bottom: 20px; }
+  section aside {
+    font: normal normal 16px "Estrangelo", sans-serif;
+    line-height: 16px;
+    float: right;
+    padding: 25px;
+    width: 350px; }
+    section aside ul {
+      list-style-position: inside; }
+      section aside ul li {
+        color: #fff;
+        margin-bottom: 14px; }
+        section aside ul li a {
+          font: normal normal 16px "Estrangelo", sans-serif;
+          line-height: 16px;
+          color: #fff; }
+        section aside ul li:last-child {
+          margin-bottom: 0px; }
+  section#about ul {
+    list-style: none; }
+    section#about ul li {
+      display: inline-block;
+      margin-bottom: 0px;
+      width: 49%; }
+      section#about ul li a {
+        font: normal normal 24px "Estrangelo", sans-serif;
+        line-height: 24px;
+        color: #fff;
+        text-decoration: none; }
+  section#twitter h1 {
+    background: transparent url(/assets/twitter_black_title.png) no-repeat center right;
+    padding-right: 65px; }
+  section#twitter p.highlight {
+    font-size: 27px;
+    line-height: 0.8em;
+    margin-bottom: 10px; }
+    section#twitter p.highlight a {
+      color: inherit; }
+  section#twitter dl {
+    border-top: 1px solid #303030;
+    font: normal normal 16px Arial, sans-serif;
+    line-height: 16px;
+    margin-top: 0px;
+    padding-top: 15px; }
+    section#twitter dl dt {
+      float: left;
+      width: auto; }
+      section#twitter dl dt img {
+        width: 80px; }
+    section#twitter dl dd {
+      float: left;
+      margin-left: 20px;
+      width: 340px; }
+      section#twitter dl dd.user {
+        color: #fff;
+        margin: 10px 0px 10px 20px; }
+      section#twitter dl dd.description {
+        font-size: 12px; }
+  section#blog .content p {
+    color: #fff; }
+  section#projects p {
+    color: #fff; }
+  section#projects a {
+    color: #fff; }
+  section#projects dl dt {
+    color: #f3bd00;
+    font-size: 18px;
+    margin-bottom: 5px; }
+  section#projects dl dd {
+    margin-bottom: 20px; }
+  section#findme ul {
+    border-left: 1px solid #303030;
+    float: right;
+    list-style: none;
+    padding: 25px 25px 25px 40px;
+    width: 335px; }
+    section#findme ul li {
+      background: transparent url(/assets/ico_rss.png) no-repeat top left;
+      display: inline-block;
+      height: 38px;
+      margin-left: 5px;
+      width: 38px; }
+      section#findme ul li a {
+        display: block;
+        height: inherit;
+        text-indent: -1999em; }
+      section#findme ul li#twitter {
+        background-image: url(/assets/ico_twitter.png); }
+      section#findme ul li#github {
+        background-image: url(/assets/ico_github.png); }
+      section#findme ul li#facebook {
+        background-image: url(/assets/ico_facebook.png); }
+      section#findme ul li#last_fm {
+        background-image: url(/assets/ico_lastfm.png); }
+      section#findme ul li#google_plus {
+        background-image: url(/assets/ico_gplus.png); }
+      section#findme ul li#linkedin {
+        background-image: url(/assets/ico_linkedin.png); }
+      section#findme ul li:hover {
+        transform: scape(1.15);
+        -ms-transform: scale(1.15);
+        -ms-transition-duration: 200ms;
+        -moz-transform: scale(1.15);
+        -moz-transition-duration: 200ms;
+        -webkit-transform: scale(1.15);
+        -webkit-transition-duration: 200ms;
+        -o-transform: scale(1.15);
+        -o-transition-duration: 200ms; }
+  section#findme aside ul {
+    border: none;
+    padding: 0px; }
+    section#findme aside ul li {
+      display: block; }
+      section#findme aside ul li a {
+        font-size: 16px;
+        padding: 10px 0px 0px 45px;
+        text-indent: 0px;
+        text-decoration: none; }
+      section#findme aside ul li:hover {
+        transform: none;
+        -ms-transform: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        text-decoration: underline; }
+  section#findme fieldset legend {
+    display: none; }
+  section#findme fieldset label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px; }
+  section#findme fieldset input[type=text] {
+    margin-bottom: 10px; }
+  section#findme fieldset input, section#findme fieldset textarea {
+    font: normal normal 16px "Estrangelo", sans-serif;
+    line-height: 16px;
+    background-color: #000;
+    border: none;
+    color: #f3bd00;
+    padding: 4px;
+    width: 486px; }
+  section#findme fieldset textarea {
+    height: 150px; }
+  section#findme fieldset input.submit {
+    margin-top: 10px;
+    width: auto !important; }
+
+footer {
+  color: #5f5f5f;
+  clear: both;
+  float: left;
+  font: normal normal 16px "Estrangelo", sans-serif;
+  line-height: 16px;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+  text-align: right;
+  width: 100%; }
+  footer a {
+    color: inherit; }
+
+#terminal {
+  background: transparent url(/assets/overlay.png) repeat top left;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%; }
+  #terminal div {
+    background: transparent url(/assets/overlay.png) repeat top left;
+    border: 2px solid #fff;
+    color: #0f0;
+    font-family: courier;
+    font-size: 16px;
+    height: 80%;
+    line-height: 1.1em;
+    margin: 50px auto;
+    padding: 20px;
+    width: 80%; }
+    #terminal div .cursor {
+      background-color: #0f0;
+      color: #0f0;
+      font-size: 14px;
+      display: inline-block;
+      margin-left: 1px;
+      width: 8px; }
